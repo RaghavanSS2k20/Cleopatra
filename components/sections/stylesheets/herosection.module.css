@@ -1,0 +1,25 @@
+.container{
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    height: 100vh; /* Ensure the background covers the entire viewport height */
+    margin: 0; /* Remove default body margin */
+    padding: 0%; /* Remove default body padding */
+    background-image: url("./../../../assets/Dots.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contentContainer{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    padding: 2%;
+}
+.herotext{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
