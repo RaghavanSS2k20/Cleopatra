@@ -1,3 +1,5 @@
+![cover](https://github.com/RaghavanSS2k20/Cleopatra/assets/76263002/ce951675-42b2-4dd1-a8f3-6f1de7c403e8)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
