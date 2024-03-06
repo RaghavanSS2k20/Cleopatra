@@ -1,0 +1,160 @@
+.heading {
+    text-transform: uppercase;
+    /* padding-top: 5%;
+    padding-bottom: 5%; */
+}
+
+.header {
+    text-align: center;
+    color: #333;
+    padding: 10px 10px 30px 10px;
+}
+
+.header h1 {
+    font-family: 'Satisfy', cursive;
+    margin: 0;
+    font-size: 66px;
+}
+.textarea-style {
+    text-transform: uppercase;
+    font-size: 16px;
+    margin: 0;
+    text-align: center;
+    font-weight: 700;
+    border: none;
+    resize: none;
+    
+}
+.scene{
+    padding-bottom: 10%;
+}
+.dialogues{
+    padding: 2%;
+}
+
+.header p {
+    margin: 0;
+    font-size: 22px;
+}
+
+.footer {
+    text-align: center;
+    padding: 30px 10px 10px 10px;
+}
+
+.footer a {
+    color: black;
+}
+
+.footer a:hover {
+    text-decoration: none;
+}
+
+.header p,
+.footer p {
+    font-family: 'Kulim Park', sans-serif;
+}
+.character {
+    width: 40%;
+    margin: 0 auto 20px;
+    
+}
+.main-container {
+    max-width: 1000px;
+    background: white;
+    font-family: 'Source Code Pro', monospace;
+    
+    padding: 30px;
+    margin: 0 auto;
+    box-shadow: 0 2.2px 22.6px rgba(0, 0, 0, 0.017), 0 5.5px 34.5px rgba(0, 0, 0, 0.022),
+        0 11.2px 42.6px rgba(0, 0, 0, 0.028), 0 23px 49px rgba(0, 0, 0, 0.038),
+        0 63px 58px rgba(0, 0, 0, 0.07);
+}
+
+.main-container div h2,
+.main-container div h3,
+.main-container div p {
+    font-size: 16px;
+    margin: 0;
+}
+
+.main-container div.margin-bottom {
+    margin-bottom: 20px;
+}
+
+.main-container div.heading {
+    text-transform: uppercase;
+
+}
+
+.main-container div.character {
+    width: 40%;
+    margin: 0 auto 20px;
+    
+    
+}
+
+.main-container div.character p.paranthetical,
+.main-container div.character h3 {
+    text-align: center;
+    font-weight: 700;
+}
+.main-container div.character p.dialogue{
+    /* font-family: 'Courier New', Courier;  */
+    font-weight: 200;
+    color: rgb(72, 71, 71);
+}
+.main-container div.character h3 {
+    text-transform: uppercase;
+}
+
+.main-container div.transition {
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.main-container div.shot {
+    text-transform: uppercase;
+}
+
+@media print {
+    @page {
+        margin: 1in 1in 1in 1.5in;
+    }
+
+    
+    .main-container {
+        box-shadow: none;
+        font-size: 12pt;
+        
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    .main-container div.character {
+        width: auto;
+    }
+
+    .main-container div.character p.paranthetical,
+    .main-container div.character h3 {
+        text-align: left;
+    }
+
+    .main-container div.character h3 {
+        margin-left: 2in;
+    }
+
+    .main-container div.character p.paranthetical {
+        margin-left: 1.5in;
+        margin-right: 2in;
+    }
+
+    .main-container div.character p {
+        margin-left: 1in;
+        margin-right: 1.5in;
+    }
+
+    .main-container div.transition {
+        text-align: left;
+        margin-left: 4in;
+    }
+}
