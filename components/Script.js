@@ -16,10 +16,12 @@ const Script = ()=>{
             <div onClick={() => handleEleementClicked("scene1-heading")}>
               <Heading id="scene1-heading" heading="INT. KLA office" isClicked={currentlyClicked === "scene1-heading"} />
             </div>
+            <div onClick={() => handleEleementClicked("scene1-action")}>
             <Action
               id="scene1-action"
               text="CLOSE ON JOKER (30's), tears in his eyes from laughing so hard..."
             />
+            </div>
             <div className={scriptStyles.dialogues}>
               <Character
                 id="scene1-character1"
