@@ -1,12 +1,13 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { Shot, Transition, Character, Heading, Action } from "./ScriptUtils";
 import scriptStyles from "./stylesheets/scriptwriting.module.css"
 const RenderScene = (scene)=>{
     console.log("scene from renderScene ", scene)
     const [currentlyClicked, setCurrentlyClicked] = useState('')
+    
     const handleEleementClicked = (id)=>{
-        console.log(id)
+        console.log("The id clicked is ",id)
         setCurrentlyClicked(id)
       }
     return scene.map((sceneItem, index)=>{
@@ -21,7 +22,10 @@ const RenderScene = (scene)=>{
                 </div>)
 
             case "Action":
-                return (<div onClick={() => handleEleementClicked(sceneItem.objId)}>
+                return (<div onClick={() => {
+                    console.log("RRRRRRRRRRRRREEEEEEEEEEEENNNNNNNNNDDDDDDDEEEEEEEEERRRRRRRRRRRRR: ",currentlyClicked === sceneItem.objId)
+                
+                    handleEleementClicked(sceneItem.objId)}}>
                 <Action 
                 key = {index} 
                 id={sceneItem.objId}

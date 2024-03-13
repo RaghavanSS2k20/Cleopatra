@@ -30,8 +30,24 @@
 }
 .dialogues{
     padding: 2%;
+
+    
+    
+}
+.dialogues h3{
+  padding: 10%;
+  margin: 1%;
+  text-align: center;
 }
 
+
+
+.dialogues p{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    color: rgb(97, 97, 97);
+    
+}
 .header p {
     margin: 0;
     font-size: 22px;
@@ -98,12 +114,15 @@
 .main-container div.character h3 {
     text-align: center;
     font-weight: 700;
+    
 }
 .main-container div.character p.dialogue{
     /* font-family: 'Courier New', Courier;  */
     font-weight: 200;
     color: rgb(72, 71, 71);
+   
 }
+
 .main-container div.character h3 {
     text-transform: uppercase;
 }

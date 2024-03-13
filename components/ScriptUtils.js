@@ -3,6 +3,7 @@ import utilStyles from "./stylesheets/scriptutils.module.css"
 import { useState } from "react";
 
 export const Heading = ({id, heading, isClicked }) => {
+  console.log("From Heading...am i been clicked ? ",isClicked)
     const [isTextarea, setIsTextarea] = useState(isClicked)
     const [headingContent, setHeadingContent] = useState(heading);
     const handleHeadingChange = (e)=>{
@@ -41,11 +42,51 @@ export const Heading = ({id, heading, isClicked }) => {
       </>
     )
   };
-  export const Action = ({ text }) => (
-    <div className={utilStyles.action}>
-      <p>{text}</p>
-    </div>
-  );
+
+  
+export const Action = ({id, text, isClicked }) => {
+  console.log("From action...am i been clicked ? ",isClicked)
+  const [isActionTextarea, setIsActionTextarea] = useState(isClicked)
+  const [actionContent, setActionContent] = useState(text);
+  const handleHeadingChange = (e)=>{
+    console.log("this will be updated in backend for Heading : ",id," and conten tupdated is ",headingContent )
+    setActionContent(e.target.value);
+  }
+  console.log("Action area va pa ? ",isActionTextarea)
+  const toggleIsCliked = ()=>{
+    if (isActionTextarea){
+      setIsActionTextarea(false)
+    }else{
+      setIsActionTextarea(true)
+    }
+  }
+  const handleBlur = () => {
+    // Update the backend when the user stops typing or clicks outside the textarea
+   isClicked = false
+   console.log("----------------------------------------------------")
+
+   console.log(isClicked)
+  };
+  return(
+    // <div className={utilStyles.action}>
+    //   <p>{text}</p>
+    // </div>
+    <>
+    { isActionTextarea?
+      (
+       <textarea
+         
+         value={text} onBlur={toggleIsCliked} className={utilStyles["textarea-style"]} onChange={handleHeadingChange} />
+      ):(
+        <div className={utilStyles.action}>
+           <p>{text}</p>
+        </div>
+   
+       )
+       }
+       </>
+  )
+};
   export  const Character = ({ character, dialogue, paranthetical }) => (
     <div className={utilStyles.character}>
       <h3>{character}</h3>
